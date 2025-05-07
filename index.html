@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bracelet Customizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Bracelet Customizer</h1>
+    <div class="controls">
+      <label>Link Style:
+        <select id="linkStyle">
+          <option value="link-silver">Silver</option>
+          <option value="link-gold">Gold</option>
+          <option value="link-silver-braided">Silver-Braided</option>
+        </select>
+      </label>
+
+      <label>Bead Style:
+        <select id="beadStyle">
+          <option value="bead-blue">Blue</option>
+          <option value="bead-red">Red</option>
+          <option value="bead-black">Black</option>
+          <option value="bead-white">White</option>
+          <option value="bead-eye">Evil Eye</option>
+        </select>
+      </label>
+
+      <label>Number of Links:
+        <input type="number" id="linkCount" min="3" max="30" value="10" />
+      </label>
+
+      <button onclick="renderBracelet()">Build Bracelet</button>
+    </div>
+
+    <canvas id="braceletCanvas" width="1200" height="150"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
